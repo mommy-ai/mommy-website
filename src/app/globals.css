@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --pink: #ff6b9d;
+  --purple: #c471ed;
+  --warm: #ffecd2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #1a0a2e 100%);
+  color: #f0e6ff;
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(196, 113, 237, 0.4);
+}
