@@ -1,19 +1,11 @@
-import Hero from "@/components/Hero";
-import Tokenomics from "@/components/Tokenomics";
-import Roadmap from "@/components/Roadmap";
-import Community from "@/components/Community";
-import Footer from "@/components/Footer";
-import ChatBubble from "@/components/ChatBubble";
+import Navbar from "@/components/Navbar";
+import Chat from "@/components/Chat";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <Tokenomics />
-      <Roadmap />
-      <Community />
-      <Footer />
-      <ChatBubble />
+    <main className="scanlines warm-bg h-screen flex flex-col">
+      <Navbar />
+      <Chat />
     </main>
   );
 }
