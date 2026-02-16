@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
   try {
     const { messages } = await req.json();
 
-    const apiKey = process.env.DEEPSEEK_API_KEY;
+    const apiKey = process.env.AIBERM_API_KEY;
     if (!apiKey) {
       return NextResponse.json({
         reply:
@@ -27,14 +27,14 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    const res = await fetch("https://api.deepseek.com/chat/completions", {
+    const res = await fetch("https://aiberm.com/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "deepseek-chat",
+        model: "claude-sonnet-4-5-20250929",
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
           ...messages.slice(-10),
