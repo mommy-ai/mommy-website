@@ -10,7 +10,13 @@ interface Message {
   timestamp: number;
 }
 
-const WS_URL = process.env.NEXT_PUBLIC_WS_URL || "http://localhost:3456";
+function getWsUrl() {
+  if (process.env.NEXT_PUBLIC_WS_URL) return process.env.NEXT_PUBLIC_WS_URL;
+  if (typeof window === "undefined") return "http://localhost:3456";
+  // Auto-detect: same host, use current protocol
+  return window.location.origin;
+}
+const WS_URL = getWsUrl();
 
 export default function Home() {
   const [socket, setSocket] = useState<Socket | null>(null);
