@@ -122,7 +122,7 @@ export default function Home() {
         <div className="header-title">🍳 MOMMY&apos;S KITCHEN</div>
         <div className="header-ca" style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.08)', borderRadius: '8px', padding: '4px 12px', fontSize: '12px', color: '#aaa', maxWidth: '320px', overflow: 'hidden' }}>
           <span style={{ color: '#ff6b9d', fontWeight: 600, whiteSpace: 'nowrap' }}>CA:</span>
-          <span style={{ fontFamily: 'monospace', fontSize: '11px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', cursor: 'pointer' }} onClick={() => { navigator.clipboard.writeText('WAITING_FOR_CA'); }} title="点击复制">WAITING_FOR_CA</span>
+          <span style={{ fontFamily: 'monospace', fontSize: '11px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', cursor: 'pointer' }} onClick={() => { navigator.clipboard.writeText('BSb15HFMxMdPGfHdahwrRrciVYredgyG4xi7bsDpump'); }} title="点击复制">BSb15HFMxMdPGfHdahwrRrciVYredgyG4xi7bsDpump</span>
         </div>
       </header>
 
